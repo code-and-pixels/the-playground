@@ -1,0 +1,161 @@
+// SET UP
+// ======
+// Sass modules
+@use "sass:color";
+
+// Custom properties
+:root {
+	--black-pearl: #051829;
+	--rhino: #2e3361;
+	--butterfly-bush: #554f8c;
+	--mantle: #8b9e91;
+}
+
+// Import fonts
+// TODO: host these locally
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Poppins:wght@100;400;700;900&display=swap");
+
+// Global styling & resets
+* {
+	margin: 0;
+	padding: 0;
+}
+
+// ONE BIG BLOB OF STYLING, FOR NOW
+// ================================
+body,
+html {
+	margin: 0;
+	background: var(--black-pearl);
+	color: color.adjust(#8b9e91, $lightness: 25%);
+	text-shadow: 1px 1px 1px var(--black-pearl);
+}
+
+body {
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+
+h1,
+h2 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.fancy-amp {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+a,
+a:link,
+a:active {
+	color: color.adjust(#8b9e91, $lightness: 25%, $saturation: 60%);
+}
+
+a:visited,
+a:hover {
+	color: color.adjust(#554f8c, $lightness: 30%, $saturation: 40%);
+}
+
+.gradient-shift {
+	height: 100vh;
+	//background: linear-gradient(135deg, #040d17, #1a3c58, #596280, #737b95, #96a09a, #b4bc9f);
+	background: linear-gradient(154deg, rgba(5, 24, 41, 1) 0%, rgba(46, 51, 97, 1) 39%, rgba(85, 79, 140, 1) 73%, rgba(139, 158, 145, 1) 100%);
+	background-size: 150% 150%;
+	animation: gradient-shift 13s ease infinite;
+}
+
+@keyframes gradient-shift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header {
+	text-align: center;
+	padding: 2rem 1rem;
+}
+
+.logo svg {
+	height: 80px;
+	width: auto;
+}
+
+.lettermark-code,
+.lettermark-pixels {
+	fill: #fff;
+}
+
+.lettermark-ampersand {
+	fill: var(--butterfly-bush);
+}
+
+main {
+	padding: 1rem;
+	width: calc(100% - (1rem * 2));
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	ul {
+		columns: 2;
+	}
+}
+
+footer {
+	text-align: center;
+	background: rgba(5, 24, 41, 0.4);
+	font-size: 1rem;
+	padding: 1rem;
+	position: fixed;
+	bottom: 0;
+	width: calc(100% - (1rem * 2));
+
+	p {
+		padding: 0;
+		margin: 0;
+
+		+ p {
+			margin-top: 0.75rem;
+			display: inline-block;
+		}
+	}
+
+	ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+		margin-right: 7px;
+
+		&::after {
+			content: "|";
+		}
+
+		&:last-of-type::after {
+			content: "";
+		}
+	}
+
+	a {
+		display: inline-block;
+		margin-right: 7px;
+	}
+}

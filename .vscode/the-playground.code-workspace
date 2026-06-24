@@ -1,8 +1,15 @@
 {
 	"folders": [
 		{
-			"path": ".."
-		}
+			"path": "..",
+		},
 	],
-	"settings": {}
+	"settings": {
+		"workbench.settings.showAISearchToggle": false,
+		"chat.disableAIFeatures": true,
+	},
+	"chat.agent.enabled": false,
+	"chat.commandCenter.enabled": false,
+	"inlineChat.accessibleDiffView": "off",
+	"terminal.integrated.initialHint": false,
 }
