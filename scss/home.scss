@@ -21,7 +21,41 @@
 	padding: 0;
 }
 
-// ONE BIG BLOB OF STYLING, FOR NOW
+// SOME BASIC RESPONSIVE SHENANIGANS
+// =================================
+body {
+	font-size: 3rem;
+}
+
+.logo svg {
+	height: auto;
+	width: 400px;
+}
+
+footer {
+	font-size: 1.65rem;
+}
+
+@media (width >= 991px) {
+	body {
+		font-size: 2rem;
+	}
+
+	.logo svg {
+		height: 80px;
+		width: auto;
+	}
+
+	main ul {
+		columns: 2;
+	}
+
+	footer {
+		font-size: 1rem;
+	}
+}
+
+// THE REST OF THE STYLING, FOR NOW
 // ================================
 body,
 html {
@@ -38,7 +72,6 @@ body {
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
 	margin-bottom: 1rem;
-	font-size: 2rem;
 	line-height: 1.5;
 }
 
@@ -91,11 +124,6 @@ header {
 	padding: 2rem 1rem;
 }
 
-.logo svg {
-	height: 80px;
-	width: auto;
-}
-
 .lettermark-code,
 .lettermark-pixels {
 	fill: #fff;
@@ -120,14 +148,12 @@ main {
 	ul {
 		margin-top: 1rem;
 		margin-bottom: 0.5rem;
-		columns: 2;
 	}
 }
 
 footer {
 	text-align: center;
 	background: rgba(5, 24, 41, 0.4);
-	font-size: 1rem;
 	padding: 1rem;
 	position: fixed;
 	bottom: 0;

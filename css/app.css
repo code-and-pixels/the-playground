@@ -1,0 +1,301 @@
+/* Will eventually be replaced with BP app file */
+/* PAGE */
+body {
+  background: #fff;
+  color: #303030;
+  font-size: 100%;
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 16px;
+}
+
+.template-placeholder-text {
+  font-size: 0.85em;
+  display: block;
+}
+
+.responsive {
+  max-width: 100%;
+  width: 100%;
+}
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.content-block {
+  margin-top: 4px;
+  margin-tobbom: 4px;
+}
+
+a.block-link {
+  display: block;
+  color: unset;
+  text-decoration: none;
+}
+a.block-link:hover {
+  outline: 1px dotted #333;
+}
+a.block-link:hover p {
+  text-decoration: underline;
+}
+a.block-link:hover p.badge {
+  text-decoration: none;
+}
+a.block-link:focus {
+  outline: 1px dotted #333;
+}
+
+.maxwidth {
+  width: 100%;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .halfsies {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .halfsies .half-1, .halfsies .half-2 {
+    flex-basis: 50%;
+  }
+}
+
+/* 33/66 block */
+.third {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.third .reverse {
+  flex-direction: column-reverse;
+}
+@media (min-width: 991px) {
+  .third {
+    flex-flow: row nowrap;
+    gap: 16px;
+  }
+  .third.reverse {
+    flex-direction: row-reverse;
+  }
+  .third .third-1 {
+    flex-basis: 33.333%;
+  }
+  .third .third-2 {
+    flex-basis: 66.666%;
+  }
+}
+
+/* Rows of blocks */
+.row-of-4-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 991px) {
+  .row-of-4-blocks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.row-of-5-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 991px) {
+  .row-of-5-blocks {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.row-of-6-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 991px) {
+  .row-of-6-blocks {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.row-of-7-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 991px) {
+  .row-of-7-blocks {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.row-of-8-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 991px) {
+  .row-of-8-blocks {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Content */
+/* ======= */
+.link-button a {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link-button a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+.underline {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5eem;
+}
+
+.custom-page-container h1, .example h1 {
+  font-size: 3em !important;
+}
+.custom-page-container h2, .example h2 {
+  font-size: 2.75em !important;
+}
+.custom-page-container h3, .example h3 {
+  font-size: 2.5em !important;
+}
+.custom-page-container h4, .example h4 {
+  font-size: 2.25em !important;
+}
+.custom-page-container h5, .example h5 {
+  font-size: 2em !important;
+}
+.custom-page-container h6, .example h6 {
+  font-size: 1.5em !important;
+}
+
+.banner-title-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: #ccc;
+  background-position: center center;
+  min-height: 35vh;
+}
+
+.title-image-text-container {
+  max-width: 100%;
+}
+.title-image-text-container h4 {
+  font-size: 1.5em;
+}
+.title-image-text-container img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.inline-icon-and-text {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.inline-icon-and-text .inline-icon {
+  flex-basis: 50px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding: 8px;
+}
+.inline-icon-and-text .inline-text {
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+.inline-icon-and-text h4 {
+  margin-bottom: 0;
+  font-size: 12px !important;
+}
+.inline-icon-and-text p {
+  margin-top: 0.5em;
+  font-size: 12px;
+}
+
+.image-and-title-block {
+  text-align: center;
+}
+
+.icon-and-title-block {
+  border: 1px solid #bbb;
+  padding: 1em;
+  text-align: center;
+}
+.icon-and-title-block p {
+  margin-bottom: 0;
+}
+
+.image-title-button-block {
+  text-align: center;
+  background-color: #ccc;
+}
+.image-title-button-block p, .image-title-button-block div {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.image-title-badge-block {
+  position: relative;
+}
+.image-title-badge-block p {
+  text-transform: uppercase;
+}
+.image-title-badge-block .badge {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  padding: 0.5em 0.75em;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 15px;
+}/*# sourceMappingURL=app.css.map */
