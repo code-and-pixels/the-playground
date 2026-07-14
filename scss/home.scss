@@ -183,6 +183,10 @@ main {
 }
 
 .social-links {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1em;
+
 	svg {
 		width: 2em;
 		height: auto;
