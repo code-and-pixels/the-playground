@@ -1,0 +1,12 @@
+// Custom properties
+:root {
+	--black-pearl: #051829;
+	--rhino: #2e3361;
+	--butterfly-bush: #554f8c;
+	--mantle: #8b9e91;
+}
+
+body,
+html {
+	background: var(--black-pearl);
+}

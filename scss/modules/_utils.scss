@@ -1,0 +1,95 @@
+// UTILS
+//======
+
+// Basic Reset
+//------------
+// Box-sizing model
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// Remove default margin
+*:not(dialog) {
+	margin: 0;
+}
+
+// Enable keyword animations
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	// Increase line-height
+	line-height: 1.5;
+	// Improve text rendering
+	-webkit-font-smoothing: antialiased;
+}
+
+// Improve media defaults
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+// Form controls should inherit fonts
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+// Beware text overflows
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+// Better line wrapping
+p {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+// Stacking context for root
+#root,
+#__next {
+	isolation: isolate;
+}
+
+// Accessibility
+// -------------
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}

@@ -1,0 +1,40 @@
+// Global styling & resets
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-bottom: 0;
+}
+
+a,
+a:link,
+a:active {
+	color: color.adjust(#8b9e91, $lightness: 25%, $saturation: 60%);
+}
+
+a:visited,
+a:hover {
+	color: color.adjust(#554f8c, $lightness: 30%, $saturation: 40%);
+}
+
+.gradient-shift {
+	height: 100dvh;
+	//background: linear-gradient(135deg, #040d17, #1a3c58, #596280, #737b95, #96a09a, #b4bc9f);
+	background: linear-gradient(154deg, rgba(5, 24, 41, 1) 0%, rgba(46, 51, 97, 1) 39%, rgba(85, 79, 140, 1) 73%, rgba(139, 158, 145, 1) 100%);
+	background-size: 150% 150%;
+	animation: gradient-shift 13s ease infinite;
+}
+
+@keyframes gradient-shift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

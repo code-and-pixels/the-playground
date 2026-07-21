@@ -1,0 +1,53 @@
+// TYPOGRAPHY
+//===========
+
+// Import fonts
+//-------------
+// TODO: host these locally
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Poppins:wght@100;400;700;900&display=swap");
+
+// Use fonts
+//----------
+body,
+html {
+	color: color.adjust(#8b9e91, $lightness: 25%);
+	text-shadow: 1px 1px 1px var(--black-pearl);
+}
+
+body {
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+
+	@media (width >= 991px) {
+	}
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+
+	@media (width >= 991px) {
+	}
+}
+
+.fancy-amp {
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+footer {
+	font-size: 2rem;
+
+	@media (width >= 991px) {
+	}
+}
+
+.aside {
+	@media (width >= 991px) {
+	}
+}
