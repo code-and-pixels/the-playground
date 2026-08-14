@@ -102,11 +102,27 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
+@media (width >= 991px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.main-content {
+  font-size: 1.5rem;
+}
+@media (width >= 991px) {
+  .main-content {
+    font-size: 2rem;
+  }
+}
+
 .fancy-amp {
   font-family: "Merriweather", serif;
   font-weight: 700;

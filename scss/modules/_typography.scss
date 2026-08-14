@@ -22,9 +22,6 @@ body {
 	font-weight: 300;
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
-
-	@media (width >= 991px) {
-	}
 }
 
 h1 {
@@ -33,6 +30,15 @@ h1 {
 	font-style: normal;
 
 	@media (width >= 991px) {
+		font-size: 2.5rem;
+	}
+}
+
+.main-content {
+	font-size: 1.5rem;
+
+	@media (width >= 991px) {
+		font-size: 2rem;
 	}
 }
 
